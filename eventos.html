@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Knewave&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilos.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css
+">
+</head>
+<body>
+  <header>
+<article class="barra_menu">
+  <div class="logo">
+  <img src="imagenes/LOGO.png" alt="">
+
+  </div>
+  <div class="menu">
+    <ul>
+      <li><a href="index.html">INICIO</a></li>
+      <li><a href="Guia.html">GUÍA</a></li>
+      <li><a href="eventos.html">EVENTOS</a></li>
+      <li><a href="">COMUNIDAD</a></li>
+    </ul>
+
+  </div>
+  <div class="btn_menu">
+    <a href="">ÚNETE AHORA</a>
+
+  </div>
+   <button class="hamburguesa" aria-label="Abrir menú">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+
+</article>
+  </header>
+<main>     
+    <!-----------------------------HERO EVENTOS--------------->
+<section class="hero-eventos">
+  <div class="como-funciona-contenido">
+    <h1 class="como-funciona-titulo">
+      FIVE MASTERS <br class="br-movil">  EVENTOS:
+      <span class="como-funciona-linea">
+        TU CALENDARIO <br class="br-movil"> DE BATALLAS 
+        <img src="imagenes/linea hero.png" alt="" class="linea-img">
+      </span>
+    </h1>
+    <p class="hero-eventos-texto">
+   No te pierdas ninguna fecha. Encuentra torneos, ligas y exhibiciones, desde plazas hasta escenarios internacionales.
+    </p>
+  </div>
+</section>
+<!-------------------------------EVENTOS DESTACADOS----------->
+<section class="eventos">
+  <h2 class="eventos-titulo">
+    EVENTOS DESTACADOS <i class="fa-solid fa-star"></i>
+    
+  </h2>
+
+  <div class="eventos-grid">
+
+    <div class="evento-card1">
+      <img src="imagenes/trofeo.png" alt="" class="evento-icono">
+      <h3 class="evento-titulo">BATALLA DE <span>MAESTROS 2026</span></h3>
+      <p class="evento-fecha">
+        EL 17 DE AGOSTO DEL 2025 PLAZOLETA DEL ROSARIO
+      </p>
+      <p class="evento-lugar">
+        <i class="fa-solid fa-location-dot"></i> BOGOTÁ, COLOMBIA
+      </p>
+      <a href="#" class="evento-boton">VER MAS Y REGISTRATE</a>
+    </div>
+
+    <div class="evento-card2">
+      <img src="imagenes/mapa-colombia.png" alt="" class="evento-icono">
+      <h3 class="evento-titulo">LIGA REGIONAL: <span>FINAL DE BOGOTÁ</span></h3>
+      <p class="evento-fecha">
+        EL 17 DE AGOSTO DEL 2025 PLAZOLETA DEL ROSARIO
+      </p>
+      <p class="evento-lugar">
+        <i class="fa-solid fa-location-dot"></i> BOGOTÁ, COLOMBIA
+      </p>
+      <a href="#" class="evento-boton">VER MAS Y REGISTRATE</a>
+    </div>
+
+  </div>
+</section>
+<!---------------------------------CALENDARIO----------------->
+<section class="calendario">
+  <div class="calendario-header">
+    <h2 class="calendario-titulo">
+      CALENDARIO COMPLETO Y LISTADO
+      <img src="imagenes/linea-calendario.png" alt="" class="calendario-linea">
+    </h2>
+    <button class="calendario-buscar" aria-label="Buscar">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+  </div>
+
+  <div class="calendario-filtros">
+
+    <div class="filtro">
+      <label for="filtro-fecha">FECHA</label>
+      <div class="filtro-input">
+        <i class="fa-regular fa-calendar"></i>
+        <input type="text" id="filtro-fecha" value="12-06-2026">
+      </div>
+    </div>
+
+  <div class="filtro">
+  <label for="filtro-ciudad">CIUDAD</label>
+  <div class="filtro-input">
+    <select id="filtro-ciudad">
+      <option>BOGOTA, USME</option>
+      <option>BOGOTA, 20 DE JULIO</option>
+      <option>BOGOTA, OLAYA</option>
+      <option>BOGOTA, CENTRO</option>
+    </select>
+  </div>
+</div>
+
+<div class="filtro">
+  <label for="filtro-tipo">TIPO DE EVENTO</label>
+  <div class="filtro-input">
+    <select id="filtro-tipo">
+      <option>LIGA, PLAZA, TORNEO</option>
+      <option>LIGA</option>
+      <option>PLAZA</option>
+      <option>TORNEO</option>
+    </select>
+  </div>
+</div>
+
+<div class="filtro">
+  <label for="filtro-nivel">NIVEL</label>
+  <div class="filtro-input">
+    <select id="filtro-nivel">
+      <option>PRINCIPIANTE</option>
+      <option>NIVEL MEDIO</option>
+      <option>PROFESIONAL</option>
+    </select>
+  </div>
+</div>
+  </div>
+</section>
+<!-- ---------------------------------FECHA EVENTOS----------->
+ <section class="listado">
+  <div class="listado-header">
+    <span>FECHA</span>
+    <span>EVENTO TIPO</span>
+    <span>ESTATUS</span>
+  </div>
+
+  <div class="listado-eventos">
+
+    <div class="evento-fila">
+      <div class="evento-fecha-box">
+        <span class="mes">OCT</span>
+        <span class="dia">23</span>
+        <span class="hora">14:00</span>
+      </div>
+
+      <img src="imagenes/FECHA EVENTOS IMG.png" alt="" class="evento-logo">
+
+      <div class="evento-info">
+        <h3>PLAZA FREESTYLE BOGOTA</h3>
+        <p><i class="fa-solid fa-location-dot"></i> PALOQUEMAO, BOGOTA</p>
+      </div>
+
+      <span class="evento-ciudad">BOGOTA</span>
+
+      <span class="evento-estado en-vivo">
+        <i class="fa-solid fa-circle"></i> LIVE
+      </span>
+
+      <a href="#" class="evento-registrarse">REGISTRARSE</a>
+
+      <a href="#" class="evento-detalles">VER DETALLES</a>
+    </div>
+
+    <div class="evento-fila">
+      <div class="evento-fecha-box">
+        <span class="mes">OCT</span>
+        <span class="dia">30</span>
+        <span class="hora">13:00</span>
+      </div>
+
+      <img src="imagenes/FECHA EVENTOS IMG.png" alt="" class="evento-logo">
+
+      <div class="evento-info">
+        <h3>USME LIGA LOCAL</h3>
+        <p><i class="fa-solid fa-location-dot"></i> SUBA, BOGOTA</p>
+      </div>
+
+      <span class="evento-ciudad">BOGOTA</span>
+
+      <span class="evento-estado esperando">
+        ESPERANDO RIVAL
+      </span>
+
+      <a href="#" class="evento-registrarse">REGISTRARSE</a>
+
+      <a href="#" class="evento-detalles">VER DETALLES</a>
+    </div>
+
+    <div class="evento-fila">
+      <div class="evento-fecha-box">
+        <span class="mes">NOV</span>
+        <span class="dia">8</span>
+        <span class="hora">18:00</span>
+      </div>
+
+      <img src="imagenes/FECHA EVENTOS IMG.png" alt="" class="evento-logo">
+
+      <div class="evento-info">
+        <h3>NACIONAL: SEMIFINALES</h3>
+        <p><i class="fa-solid fa-location-dot"></i> NACIONAL, BOGOTA</p>
+      </div>
+
+      <span class="evento-ciudad">BOGOTA</span>
+
+      <span class="evento-estado esperando">
+        ESPERANDO RIVAL
+      </span>
+
+      <a href="#" class="evento-registrarse">REGISTRARSE</a>
+
+      <a href="#" class="evento-detalles">VER DETALLES</a>
+    </div>
+    <div class="evento-fila">
+  <div class="evento-fecha-box">
+    <span class="mes">NOV</span>
+    <span class="dia">15</span>
+    <span class="hora">20:00</span>
+  </div>
+
+  <img src="imagenes/FECHA EVENTOS IMG.png" alt="" class="evento-logo">
+
+  <div class="evento-info">
+    <h3>CALI STREET KINGS</h3>
+    <p><i class="fa-solid fa-location-dot"></i> SUBA, BOGOTA</p>
+  </div>
+
+  <span class="evento-ciudad">BOGOTA</span>
+
+  <span class="evento-estado esperando">
+    ESPERANDO RIVAL
+  </span>
+
+  <a href="#" class="evento-registrarse">REGISTRARSE</a>
+
+  <a href="#" class="evento-detalles">VER DETALLES</a>
+</div>
+
+<div class="evento-fila">
+  <div class="evento-fecha-box">
+    <span class="mes">NOV</span>
+    <span class="dia">20</span>
+    <span class="hora">13:00</span>
+  </div>
+
+  <img src="imagenes/FECHA EVENTOS IMG.png" alt="" class="evento-logo">
+
+  <div class="evento-info">
+    <h3>UNIVERSIDADES FREESTYLE</h3>
+    <p><i class="fa-solid fa-location-dot"></i> MACARENA, BOGOTA</p>
+  </div>
+
+  <span class="evento-ciudad">BOGOTA</span>
+
+  <span class="evento-estado en-vivo">
+    <i class="fa-solid fa-circle"></i> LIVE
+  </span>
+
+  <a href="#" class="evento-registrarse">REGISTRARSE</a>
+
+  <a href="#" class="evento-detalles">VER DETALLES</a>
+</div>
+
+<div class="evento-fila">
+  <div class="evento-fecha-box">
+    <span class="mes">NOV</span>
+    <span class="dia">25</span>
+    <span class="hora">20:00</span>
+  </div>
+
+  <img src="imagenes/FECHA EVENTOS IMG.png" alt="" class="evento-logo">
+
+  <div class="evento-info">
+    <h3>USME ART Y FREESTYLE</h3>
+    <p><i class="fa-solid fa-location-dot"></i> USME, BOGOTA</p>
+  </div>
+
+  <span class="evento-ciudad">BOGOTA</span>
+
+  <span class="evento-estado esperando">
+    ESPERANDO RIVAL
+  </span>
+
+  <a href="#" class="evento-registrarse">REGISTRARSE</a>
+
+  <a href="#" class="evento-detalles">VER DETALLES</a>
+</div>
+
+<div class="evento-fila">
+  <div class="evento-fecha-box">
+    <span class="mes">DIC</span>
+    <span class="dia">7</span>
+    <span class="hora">18:00</span>
+  </div>
+
+  <img src="imagenes/FECHA EVENTOS IMG.png" alt="" class="evento-logo">
+
+  <div class="evento-info">
+    <h3>ENCENDER LA VOZ</h3>
+    <p><i class="fa-solid fa-location-dot"></i> PLAZA DE BOLIVAR, BOGOTA</p>
+  </div>
+
+  <span class="evento-ciudad">BOGOTA</span>
+
+  <span class="evento-estado esperando">
+    ESPERANDO RIVAL
+  </span>
+
+  <a href="#" class="evento-registrarse">REGISTRARSE</a>
+
+  <a href="#" class="evento-detalles">VER DETALLES</a>
+</div>
+
+  </div>
+</section>
+<!---------------------------------SLIDE EVENTOS-------------->
+<section class="ligas">
+  <h2 class="ligas-titulo">
+    LIGAS Y CLASIFICACIONES
+    <img src="imagenes/corona.png" alt="" class="ligas-corona">
+  </h2>
+
+  <div class="ligas-carrusel-wrapper">
+    <div class="ligas-carrusel" id="ligasCarrusel">
+
+      <div class="liga-card">
+        <h3>LIGA 5M NACIONAL</h3>
+        <div class="liga-item">
+          <img src="imagenes/nosshya.png" alt="">
+          <span class="liga-nombre">NOSYA</span>
+          <span class="liga-puntos">135</span>
+        </div>
+        <div class="liga-item">
+          <img src="imagenes/ZERO EVENTOS.png" alt="">
+          <span class="liga-nombre">ZERO</span>
+          <span class="liga-puntos">100</span>
+        </div>
+        <a href="#" class="liga-link">ENTRA A UNA LIGA Y DEMUESTRA TU NIVEL. <i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+
+      <div class="liga-card">
+        <h3>LIGA 5M INTERNACIONAL</h3>
+        <div class="liga-item">
+          <img src="imagenes/RIKO.jpg" alt="">
+          <span class="liga-nombre">RIKO</span>
+          <span class="liga-puntos">123</span>
+        </div>
+        <div class="liga-item">
+          <img src="imagenes/DRAX.jpg" alt="">
+          <span class="liga-nombre">DRAX</span>
+          <span class="liga-puntos">96</span>
+        </div>
+        <a href="#" class="liga-link">ENTRA A UNA LIGA Y DEMUESTRA TU NIVEL. <i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+
+      <div class="liga-card">
+        <h3>LIGA 5M LOCALIDAD</h3>
+        <div class="liga-item">
+          <img src="imagenes/VYRO.jpg" alt="">
+          <span class="liga-nombre">VYRO</span>
+          <span class="liga-puntos">130</span>
+        </div>
+        <div class="liga-item">
+          <img src="imagenes/TINTA ROJA.jpg" alt="">
+          <span class="liga-nombre">TINTA ROJA</span>
+          <span class="liga-puntos">97</span>
+        </div>
+        <a href="#" class="liga-link">ENTRA A UNA LIGA Y DEMUESTRA TU NIVEL. <i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+
+      <div class="liga-card">
+        <h3>LIGA 5M BARRIO</h3>
+        <div class="liga-item">
+          <img src="imagenes/ZERK.jpg" alt="">
+          <span class="liga-nombre">ZERK</span>
+          <span class="liga-puntos">96</span>
+        </div>
+        <div class="liga-item">
+          <img src="imagenes/LYNX.jpg" alt="">
+          <span class="liga-nombre">LYNX</span>
+          <span class="liga-puntos">36</span>
+        </div>
+        <a href="#" class="liga-link">ENTRA A UNA LIGA Y DEMUESTRA TU NIVEL. <i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+
+    </div>
+
+    <button class="ligas-flecha" id="ligasFlecha" aria-label="Siguiente">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+  </div>
+</section>
+    <!-- --------------------------CTA-HOME------------------->
+     <section class="cta-home"> 
+ <div class="cta-home-slide cta-home-slide--1 activo" style="background-image: url(imagenes/Mask\ group.png);">
+    <div class="cta-home-overlay"></div>
+    <div class="cta-home-contenido">
+      <h1 class="cta-home-titulo">EL FREESTYLE TIENE FUTURO<br><span>FIVE MASTERS☆</span> </h1>
+      <a href="#" class="cta-home-boton">Unirme a la comunidad <span class="flecha">→</span></a>
+    </div>
+  </div>
+
+  <div class="cta-home-slide cta-home-slide--2" style="background-image: url(imagenes/slide\ 2.png);">
+    <div class="cta-home-overlay"></div>
+    <div class="cta-home-contenido">
+ 
+
+      <h1 class="cta-home-titulo">EL FREESTYLE TIENE FUTURO<br><span>HAZ PARTE DE EL.</span></h1>
+      <a href="#" class="cta-home-boton">Unirme a la comunidad <span class="flecha">→</span></a>
+    </div>
+  </div>
+
+  <div class="cta-home-slide cta-home-slide--3" style="background-image: url(imagenes/slide\ 3.png);">
+    <div class="cta-home-overlay"></div>
+    <div class="cta-home-contenido">
+      <h1 class="cta-home-titulo">EL FREESTYLE TIENE FUTURO<br><span>ACOMPAÑANOS.</span></h1>
+      <a href="#" class="cta-home-boton">Unirme a la comunidad <span class="flecha">→</span></a>
+    </div>
+  </div>
+
+  <div class="cta-home-dots">
+    <span class="cta-home-dot activo"></span>
+    <span class="cta-home-dot"></span>
+    <span class="cta-home-dot"></span>
+  </div>
+  </section>
+  </main>  
+  <!-- ------------------------------FOOTER--------------------- -->
+ <footer>
+  <div class="footer-top">
+    <article class="logo_footer">
+      <img src="imagenes/LOGO.png" alt="">
+      <p>Conectamos a la comunidad <br>del freestyle</p>
+      <article class="redes_footer">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      </article>
+    </article>
+
+    <nav class="footer_nav">
+      <h4>NAVEGA</h4>
+      <ul>
+        <li><a href="">Inicio</a></li>
+        <li><a href="">Cómo funciona</a></li>
+        <li><a href="">Eventos</a></li>
+        <li><a href="">Comunidad</a></li>
+        <li><a href="">Precios</a></li>
+        <li><a href="">Blog</a></li>
+      </ul>
+    </nav>
+
+    <nav class="footer_nav">
+      <h4>RECURSOS</h4>
+      <ul>
+        <li><a href="">Entrenamientos</a></li>
+        <li><a href="">Ranking</a></li>
+        <li><a href="">Minijuegos</a></li>
+        <li><a href="">Foro</a></li>
+        <li><a href="">Preguntas frecuentes</a></li>
+        <li><a href="">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <nav class="footer_nav">
+      <h4>LEGAL</h4>
+      <ul>
+        <li><a href="">Términos y condiciones</a></li>
+        <li><a href="">Política de privacidad</a></li>
+        <li><a href="">Política de cookies</a></li>
+      </ul>
+    </nav>
+
+    <article class="footer-app">
+      <h4>DESCARGA FIVE MASTERS</h4>
+      <p>Lleva el freestyle siempre contigo. Disponible en iOS y Android.</p>
+      <div class="botones-app">
+        <a href="#"><i class="fa-brands fa-apple"></i> App Store</a>
+        <a href="#"><i class="fa-brands fa-google-play"></i> Google Play</a>
+      </div>
+    </article>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2024 FIVE MASTERS. TODOS LOS DERECHOS RESERVADOS.</p>
+  </div>
+</footer>
+  <script src="menu.js"></script>
+</body>
+</html>
