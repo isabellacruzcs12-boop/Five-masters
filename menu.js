@@ -1,3 +1,5 @@
+
+
 const hamburguesa = document.querySelector('.hamburguesa');
 const menu = document.querySelector('.menu');
 
@@ -5,6 +7,12 @@ hamburguesa.addEventListener('click', () => {
   menu.classList.toggle('activo');
     hamburguesa.classList.toggle('activo');
 });
+
+
+
+
+
+
 
 const slides = document.querySelectorAll('.cta-home-slide');
 const dots = document.querySelectorAll('.cta-home-dot');
@@ -37,19 +45,51 @@ dots.forEach((dot, indice) => {
   });
 });
 
-iniciarAutoplay();
 
-const carrusel = document.getElementById('ligasCarrusel');
-  const flecha = document.getElementById('ligasFlecha');
 
-  flecha.addEventListener('click', () => {
-    const card = carrusel.querySelector('.liga-card');
-    const scrollAmount = card.offsetWidth + 20; // ancho de la card + gap
 
-    // Si ya llegó al final, vuelve al inicio
-    if (carrusel.scrollLeft + carrusel.offsetWidth >= carrusel.scrollWidth - 10) {
-      carrusel.scrollTo({ left: 0, behavior: 'smooth' });
-    } else {
-      carrusel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-    }
+
+
+
+
+ 
+  const buttons = document.querySelectorAll('#navList button');
+
+ 
+  const sections = document.querySelectorAll('.section');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      buttons.forEach(b => b.parentElement.classList.remove('active'));
+      
+      btn.parentElement.classList.add('active');
+
+      
+      const target = document.getElementById(btn.dataset.target);
+
+      if (target) {
+       
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
